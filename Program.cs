@@ -4,10 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace ATM
 {
     static class Program
     {
+        public static int id = 0;
+        public static string db = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mayur\Desktop\c#\ATM\ATM.mdf;Integrated Security=True";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
