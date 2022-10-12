@@ -27,5 +27,10 @@ namespace ATM
             cmd = new SqlCommand("insert into holder (accountno, firstn, lastn, mobileno, email, dob, nomineename, nomineerel, nomineecontact, city, gender, pin) values('"+accno+"', '"+firstn+ "', '" + lastn + "', '" + mobileno + "', '" + email + "', '" + dob + "', '"+nominame+ "', '"+nomirel+ "', '"+nomicon+ "', '"+city+ "', '"+gender+ "', '"+pin+"'); ", con);
             cmd.ExecuteNonQuery();
         }
+        public void login(String accno, String pin)
+        {
+            getcon();
+             
+        }
     }
 }

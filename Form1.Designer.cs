@@ -34,8 +34,8 @@ namespace ATM
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pin = new System.Windows.Forms.TextBox();
+            this.accoutno = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,20 +94,21 @@ namespace ATM
             this.button1.TabIndex = 13;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // pin
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 20);
-            this.textBox2.TabIndex = 12;
+            this.pin.Location = new System.Drawing.Point(412, 118);
+            this.pin.Name = "pin";
+            this.pin.Size = new System.Drawing.Size(160, 20);
+            this.pin.TabIndex = 12;
             // 
-            // textBox1
+            // accoutno
             // 
-            this.textBox1.Location = new System.Drawing.Point(412, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
-            this.textBox1.TabIndex = 11;
+            this.accoutno.Location = new System.Drawing.Point(412, 92);
+            this.accoutno.Name = "accoutno";
+            this.accoutno.Size = new System.Drawing.Size(160, 20);
+            this.accoutno.TabIndex = 11;
             // 
             // panel1
             // 
@@ -128,8 +129,8 @@ namespace ATM
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pin);
+            this.Controls.Add(this.accoutno);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -147,8 +148,8 @@ namespace ATM
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pin;
+        private System.Windows.Forms.TextBox accoutno;
         private System.Windows.Forms.Panel panel1;
     }
 }
