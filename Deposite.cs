@@ -35,7 +35,9 @@ namespace ATM
             } else
             {
                 t.deposite(Convert.ToInt32(amount.Text));
-                
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+                this.Hide();
             }
             
         }
