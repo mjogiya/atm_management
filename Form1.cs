@@ -13,7 +13,7 @@ namespace ATM
     public partial class Form1 : Form
     {
         Three f = new Three();
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -30,7 +30,16 @@ namespace ATM
         private void button1_Click(object sender, EventArgs e)
         {
             f.getcon();
-            f.login(accoutno.Text, pin.Text);
+            String log = f.login(accoutno.Text, pin.Text);
+            if(log == "login")
+            {
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+                this.Hide();
+            } else
+            {
+                MessageBox.Show("Something wrong");
+            }
         }
     }
 }
